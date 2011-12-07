@@ -15,7 +15,17 @@
 * misrepresented as being the original software.
 * 3. This notice may not be removed or altered from any source distribution.
 */
-var Box2D = {};
+
+/* Closure Library support patch by mvasilkov, http://animuchan.net */
+goog.provide('Box2D');
+goog.provide('Box2D.Collision');
+goog.provide('Box2D.Collision.Shapes');
+goog.provide('Box2D.Common');
+goog.provide('Box2D.Common.Math');
+goog.provide('Box2D.Dynamics');
+goog.provide('Box2D.Dynamics.Contacts');
+goog.provide('Box2D.Dynamics.Controllers');
+goog.provide('Box2D.Dynamics.Joints');
 
 (function (a2j, undefined) {
 
