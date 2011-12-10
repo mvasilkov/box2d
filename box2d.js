@@ -1365,7 +1365,7 @@ Box2D.postDefs = [];
          }
          p = simplex.GetClosestPoint();
          distanceSqr2 = p.LengthSquared();
-         if (distanceSqr2 > distanceSqr1) {}
+      // if (distanceSqr2 > distanceSqr1) {}
          distanceSqr1 = distanceSqr2;
          var d = simplex.GetSearchDirection();
          if (d.LengthSquared() < Number.MIN_VALUE * Number.MIN_VALUE) {
@@ -10204,7 +10204,7 @@ Box2D.postDefs = [];
       var bB = this.m_bodyB;
       var tMat;
       var tX = 0;
-      if (this.m_enableMotor || this.m_enableLimit) {}
+   // if (this.m_enableMotor || this.m_enableLimit) {}
       tMat = bA.m_xf.R;
       var r1X = this.m_localAnchor1.x - bA.m_sweep.localCenter.x;
       var r1Y = this.m_localAnchor1.y - bA.m_sweep.localCenter.y;
