@@ -27,6 +27,17 @@ goog.provide('Box2D.Dynamics.Contacts');
 goog.provide('Box2D.Dynamics.Controllers');
 goog.provide('Box2D.Dynamics.Joints');
 
+/* Package structure */
+if (typeof(Box2D) === "undefined") Box2D = {};
+if (typeof(Box2D.Collision) === "undefined") Box2D.Collision = {};
+if (typeof(Box2D.Collision.Shapes) === "undefined") Box2D.Collision.Shapes = {};
+if (typeof(Box2D.Common) === "undefined") Box2D.Common = {};
+if (typeof(Box2D.Common.Math) === "undefined") Box2D.Common.Math = {};
+if (typeof(Box2D.Dynamics) === "undefined") Box2D.Dynamics = {};
+if (typeof(Box2D.Dynamics.Contacts) === "undefined") Box2D.Dynamics.Contacts = {};
+if (typeof(Box2D.Dynamics.Controllers) === "undefined") Box2D.Dynamics.Controllers = {};
+if (typeof(Box2D.Dynamics.Joints) === "undefined") Box2D.Dynamics.Joints = {};
+
 (function (a2j, undefined) {
 
    if(!(Object.prototype.defineProperty instanceof Function)
@@ -79,16 +90,6 @@ goog.provide('Box2D.Dynamics.Joints');
 //#TODO remove assignments from global namespace
 var Vector = Array;
 var Vector_a2j_Number = Box2D.NVector;
-//package structure
-if (typeof(Box2D) === "undefined") Box2D = {};
-if (typeof(Box2D.Collision) === "undefined") Box2D.Collision = {};
-if (typeof(Box2D.Collision.Shapes) === "undefined") Box2D.Collision.Shapes = {};
-if (typeof(Box2D.Common) === "undefined") Box2D.Common = {};
-if (typeof(Box2D.Common.Math) === "undefined") Box2D.Common.Math = {};
-if (typeof(Box2D.Dynamics) === "undefined") Box2D.Dynamics = {};
-if (typeof(Box2D.Dynamics.Contacts) === "undefined") Box2D.Dynamics.Contacts = {};
-if (typeof(Box2D.Dynamics.Controllers) === "undefined") Box2D.Dynamics.Controllers = {};
-if (typeof(Box2D.Dynamics.Joints) === "undefined") Box2D.Dynamics.Joints = {};
 //pre-definitions
 (function () {
    Box2D.Collision.IBroadPhase = 'Box2D.Collision.IBroadPhase';
